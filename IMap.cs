@@ -81,42 +81,52 @@
         /// Unknown
         /// </summary>
         bool IsCallNewbieDisable { get; }
+
         /// <summary>
         /// Are we in a house
         /// </summary>
         bool IsFamilyMap { get; }
+
         /// <summary>
         /// Can we revive here?
         /// </summary>
         bool IsRebornNowEnable { get; }
+
         /// <summary>
         /// Are newbies protected
         /// </summary>
         bool IsNewbieProtectMap { get; }
+
         /// <summary>
         /// Can we use skills here?
         /// </summary>
         bool IsTrainingDisable { get; }
+
         /// <summary>
         /// Can we setup market stalls here
         /// </summary>
         bool IsBoothEnable { get; }
+
         /// <summary>
         /// Are we one of the metzone maps?
         /// </summary>
         bool IsMetZoneMap { get; }
+
         /// <summary>
         /// Are we frozen grotto?
         /// </summary>
         bool IsGrotto { get; }
+
         /// <summary>
         /// Is this the NPC jail map?
         /// </summary>
         bool IsNpcJail { get; }
+
         /// <summary>
         /// Is this PKArea?
         /// </summary>
         bool IsPkArena { get; }
+
         /// <summary>
         /// Can we access the coordinate at a given location?
         /// </summary>
@@ -124,6 +134,7 @@
         /// <param name="y"></param>
         /// <returns></returns>
         bool ValidCoordinate(ushort x, ushort y);
+
         /// <summary>
         /// Try to get the revive point for the map, aka when a player dies where does he revive to?
         /// </summary>

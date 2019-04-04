@@ -14,6 +14,7 @@ namespace LegacyConquer.Api
     /// </summary>
     /// <param name="input"></param>
     public delegate void InputCallback(string input);
+
     /// <summary>
     /// The interface for handling npc dialog creation.
     /// </summary>
@@ -23,18 +24,22 @@ namespace LegacyConquer.Api
         /// The dialog text.
         /// </summary>
         string Text { get; set; }
+
         /// <summary>
         /// The dialog npc avatar
         /// </summary>
         ushort Avatar { get; set; }
+
         /// <summary>
         /// PreMade template to add an option that closes the dialog and has the text 'I See.'
         /// </summary>
         void ISee();
+
         /// <summary>
         /// PreMade template to add an option that closes the dialog and has the text 'Just passing by.'
         /// </summary>
         void PassingBy();
+
         /// <summary>
         /// Add a input option to the dialog
         /// </summary>
@@ -42,6 +47,7 @@ namespace LegacyConquer.Api
         /// <param name="text">The text to show above the input field.</param>
         /// <param name="maxLen">The max length of the input field.</param>
         void Input(InputCallback callback, string text, uint maxLen = 100);
+
         /// <summary>
         /// Adds an Option to the dialog.
         /// </summary>
