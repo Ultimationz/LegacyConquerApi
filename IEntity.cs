@@ -10,15 +10,15 @@ namespace LegacyConquer.Api
         /// <summary>
         /// The name of the entity.
         /// </summary>
-        string Name { get; set; }
+        string Name { get; }
         /// <summary>
         /// The level of the entity
         /// </summary>
-        byte Level { get; set; }
+        byte Level { get; }
         /// <summary>
         /// The current health of the entity.
         /// </summary>
-        uint Health { get; set; }
+        uint Health { get; }
         /// <summary>
         /// Is the entity dead?
         /// </summary>

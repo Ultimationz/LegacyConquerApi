@@ -8,7 +8,7 @@
         /// <summary>
         /// The unique identifier for every object in the world.
         /// </summary>
-        uint Id { get; set; }
+        uint Id { get; }
         /// <summary>
         /// Is the object a Player?
         /// </summary>
