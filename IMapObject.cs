@@ -29,5 +29,9 @@
         /// Teleport the object to a specific map and coordinate.
         /// </summary>
         bool Teleport(uint mapId, ushort x, ushort y,bool force=false);
+        /// <summary>
+        /// The mapdata the object is currently on
+        /// </summary>
+        IMap Map { get; }
     }
 }

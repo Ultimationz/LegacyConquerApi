@@ -49,6 +49,7 @@
     <Compile Include="IEntity.cs" />
     <Compile Include="IGameClient.cs" />
     <Compile Include="IGameObject.cs" />
+    <Compile Include="IMap.cs" />
     <Compile Include="IMapObject.cs" />
     <Compile Include="INpc.cs" />
     <Compile Include="INpcDialog.cs" />

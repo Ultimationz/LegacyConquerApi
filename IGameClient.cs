@@ -120,5 +120,6 @@ namespace LegacyConquer.Api
         /// The The players current XpCircle (0-100)
         /// </summary>
         byte XpCircle { get; }
+
     }
 }
