@@ -39,5 +39,19 @@
         /// The mapdata the object is currently on
         /// </summary>
         IMap Map { get; }
+
+        /// <summary>
+        /// Get the distance to another object in the world.
+        /// </summary>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        int DistanceTo(IMapObject target);
+
+        /// <summary>
+        /// Is the target on the same map as this object?
+        /// </summary>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        bool SameMap(IMapObject target);
     }
 }

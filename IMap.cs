@@ -142,6 +142,6 @@
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <returns></returns>
-        bool TryGetRevivePoint(out uint map, out uint x, out uint y);
+        bool TryGetRevivePoint(out uint map, out ushort x, out ushort y);
     }
 }
