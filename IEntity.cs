@@ -23,6 +23,11 @@ namespace LegacyConquer.Api
         uint Health { get; }
 
         /// <summary>
+        /// The maximum health this entity can have.
+        /// </summary>
+        uint MaxHealth { get; }
+
+        /// <summary>
         /// Is the entity dead?
         /// </summary>
         bool IsDead { get; }
@@ -46,6 +51,23 @@ namespace LegacyConquer.Api
         /// Is the entity black named?
         /// </summary>
         bool IsBlackName { get; }
+
+        /// <summary>
+        /// Fully Heal this entity.
+        /// </summary>
+        void Heal();
+
+        /// <summary>
+        /// Set the health to a percent. (Minimum 1%) i.e (50%)
+        /// </summary>
+        /// <param name="percent"></param>
+        void SetHealthPercent(byte percent);
+
+        /// <summary>
+        /// Set the health to an exact amount. (Minimum 1) i.e 500
+        /// </summary>
+        /// <param name="amount"></param>
+        void SetHealth(uint amount);
 
     }
 }

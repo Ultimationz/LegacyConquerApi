@@ -146,5 +146,16 @@ namespace LegacyConquer.Api
         /// </summary>
         byte XpCircle { get; }
 
+        /// <summary>
+        /// Create a new item, (The new item wil not have a owner, you should add it to the clients inventory once created)
+        /// </summary>
+        /// <param name="itemType">The identifier for the item from itemtype.dat</param>
+        /// <param name="plus"></param>
+        /// <param name="bound"></param>
+        /// <returns></returns>
+        ICoItem CreateNew(uint itemType, byte plus, bool bound = false);
+
+        IInventory Inventory { get; }
+        
     }
 }

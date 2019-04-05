@@ -46,9 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums.cs" />
+    <Compile Include="ICoItem.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="IGameClient.cs" />
     <Compile Include="IGameObject.cs" />
+    <Compile Include="IInventory.cs" />
+    <Compile Include="IItemType.cs" />
     <Compile Include="IMap.cs" />
     <Compile Include="IMapObject.cs" />
     <Compile Include="INpc.cs" />
