@@ -47,9 +47,9 @@ namespace LegacyConquer.Api
         uint Cps { get; }
 
         /// <summary>
-        /// The amount of exp the player currently has, (This will soon be changed)
+        /// Client Exp manager, Easy access to alot of fun :p
         /// </summary>
-        ulong Exp { get; }
+        IClientExp Exp { get; }
 
         /// <summary>
         /// The amount of Agility points the player currently has assigned.
@@ -153,7 +153,7 @@ namespace LegacyConquer.Api
         /// <param name="plus"></param>
         /// <param name="bound"></param>
         /// <returns></returns>
-        ICoItem CreateNew(uint itemType, byte plus, bool bound = false);
+        ICoItem CreateNewItem(uint itemType, byte plus, bool bound = false);
 
         IInventory Inventory { get; }
         

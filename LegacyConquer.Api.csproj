@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums.cs" />
+    <Compile Include="IClientExp.cs" />
     <Compile Include="ICoItem.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="IGameClient.cs" />
