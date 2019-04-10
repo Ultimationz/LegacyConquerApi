@@ -54,5 +54,13 @@ namespace LegacyConquer.Api
         /// <param name="callback">The callback method when the user clicks the option, Check the OptionCallback delegate above.</param>
         /// <param name="text">The text for user to click.</param>
         void Option(OptionCallback callback, string text);
+
+        /// <summary>
+        /// Will this dialog be a yes and no question.
+        /// </summary>
+        /// <param name="question">The question :p</param>
+        /// <param name="yes">When the player clicks yes, what method should we execute?</param>
+        /// <param name="no">When the player clicks no, What method should we execute?</param>
+        void Popup(string question, OptionCallback yes, OptionCallback no);
     }
 }

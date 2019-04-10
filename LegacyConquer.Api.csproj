@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums.cs" />
+    <Compile Include="Examples\NpcScriptExample.cs" />
     <Compile Include="IClientExp.cs" />
     <Compile Include="ICoItem.cs" />
     <Compile Include="IEntity.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="INpc.cs" />
     <Compile Include="INpcDialog.cs" />
     <Compile Include="INpcScript.cs" />
+    <Compile Include="ISkillManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,4 +74,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Vsxmd.1.4.1\build\Vsxmd.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Vsxmd.1.4.1\build\Vsxmd.targets'))" />
   </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_StartDate="2000/1/1" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

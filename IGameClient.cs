@@ -97,9 +97,9 @@ namespace LegacyConquer.Api
         uint ProfessionLevel { get; }
 
         /// <summary>
-        /// The players current profession, i.e 1,2,4,10 (this will soon be an ENUM for ease of access)
+        /// The players current profession, i.e 1,2,4,10
         /// </summary>
-        uint ProfessionSort { get; }
+        ProfessionType ProfessionSort { get; }
 
         /// <summary>
         /// The players profession after first rebirth. This rotates with Reincarnation
@@ -110,6 +110,13 @@ namespace LegacyConquer.Api
         /// The players profession after second rebirth. This rotates with Reincarnation
         /// </summary>
         byte Profession2 { get; }
+
+        /// <summary>
+        /// Change the players profession
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="level"></param>
+        void SetProfession(ProfessionType type, byte level);
 
         /// <summary>
         /// The amount of times the player has reborned.
@@ -147,7 +154,7 @@ namespace LegacyConquer.Api
         byte XpCircle { get; }
 
         /// <summary>
-        /// Create a new item, (The new item wil not have a owner, you should add it to the clients inventory once created)
+        /// Create a new item, (The new item wil not have an owner, you should add it to the clients inventory once created)
         /// </summary>
         /// <param name="itemType">The identifier for the item from itemtype.dat</param>
         /// <param name="plus"></param>
@@ -155,6 +162,9 @@ namespace LegacyConquer.Api
         /// <returns></returns>
         ICoItem CreateNewItem(uint itemType, byte plus, bool bound = false);
 
+        /// <summary>
+        /// access the players inventory
+        /// </summary>
         IInventory Inventory { get; }
         
     }

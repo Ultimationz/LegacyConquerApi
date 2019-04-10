@@ -71,6 +71,23 @@ namespace LegacyConquer.Api
         HeavyRing
 
     }
+
+    public enum ProfessionType:byte
+    {
+        Trojan=1,
+        Warrior=2,
+        Archer=4,
+        Ninja=5,
+        Monk=6,
+        Pirate=7,
+        DragonWarrior=8,
+        Taoist=10,
+        MetalTaoist=11,
+        WoodTaoist=12,
+        WaterTaoist=13,
+        FireTaoist=14,
+        EarthTaoist=15,
+    }
     public enum ItemPosition : ulong
     {
         //Inventory = 0,
