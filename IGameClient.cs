@@ -166,6 +166,11 @@ namespace LegacyConquer.Api
         /// access the players inventory
         /// </summary>
         IInventory Inventory { get; }
+
+        /// <summary>
+        /// Access the clients skill manager.
+        /// </summary>
+        ISkillManager SkillManager { get; }
         
     }
 }
