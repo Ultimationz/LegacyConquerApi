@@ -170,7 +170,7 @@ namespace LegacyConquer.Api
         /// <summary>
         /// Access the clients skill manager.
         /// </summary>
-        ISkillManager SkillManager { get; }
+        ISkillManager Skills { get; }
         
     }
 }
